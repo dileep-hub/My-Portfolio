@@ -1,0 +1,76 @@
+{% extends "base.html" %}   
+ 
+{% load static %}
+
+{% block body %}
+
+        <!--Start Header -- 1-->
+        <header>
+            <div class="container">
+              <div class="row">
+                <div class="brand-name">
+                    <a href="" class="logo">Dhee estroyer</a>
+                </div>
+                <div class="navbar">
+                    <ul>
+                        <li><a href="/" >Home</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/project">Projects</a></li>
+                        
+                        <li><a href="/contact" class="active">Contact</a></li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+        </header>
+        <!-- End Header -- 1 -->
+
+         <!--Start Contact-->
+
+    <section class="contact-us">
+        <div class="container">
+            <div class="row text-center">
+              
+                <div class="section-title ">
+                    <h1>Get In Touch</h1>
+                </div>
+              
+            </div>
+            <div class="row">
+                <div class="contact-form">
+                    <div class="row">
+                        <div class="text">
+                            <h2>Drop a line</h2>
+                            <p>I'm here to answer any Question you have</p>
+                        </div>
+                    </div>
+                      <form action="{% url 'contact' %}" method="POST"> 
+                        {% csrf_token %}
+                        <div class="row space-between">
+                            <div class="col-6">
+                                <input type="text" class="form-control" name="name" placeholder="Name">
+                            </div>
+                            <div class="col-6">
+                                <input type="text" class="form-control" name="email" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <textarea class="form-control" name="comment" placeholder="Your Comment"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="button" >
+                                <button  type="submit" >Get IN Touch</button>
+                            </div>
+                        </div>
+                      </form>
+               </div>
+            </div>
+        </div>
+    </section>
+
+    <!--End Contact-->
+        
+   
+{% endblock body %}
