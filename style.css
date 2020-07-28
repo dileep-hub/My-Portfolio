@@ -1,0 +1,688 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    
+}
+
+* {
+    box-sizing: border-box;   
+    margin: 0;    /* no gap between the sections*/
+}
+ 
+.container {
+    max-width: 1370px;
+    /*background-color: blue;*/
+    margin: auto;
+    padding:0 73px;
+}
+
+.row{
+    display: flex;  /* flex means it divides into columns(flex)*/
+    flex-wrap: wrap;
+}
+
+
+/* Header Section*/
+header{
+    background-color: #dda783;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    border-bottom: 1px solid #ffffff;
+    padding: 0px 15px;
+    background-size: cover;
+    position: fixed;
+    
+}
+
+
+header .row{
+    justify-content: space-between;
+    align-items: center;      /* it makes the in the center */
+}
+
+/*header .brand-name{
+    /*background-color: blue;  /* giving color to brand name flex
+}*/
+
+header .brand-name a{
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: 900;
+    color: #444444;
+    text-transform: uppercase;
+    position: relative;       /* for line */
+}
+
+
+
+/*header .navbar{
+    /*background-color: red;   /* giving color to navbar flex
+}*/
+
+header .navbar ul{   /* here ul is not a class so u cant take header .ul*/ 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header .navbar ul li{
+    display: inline-block;
+    margin-left: 35px ;
+} 
+
+header .navbar ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 72px;
+    color: #ffffff;
+    display: block;
+    font-weight: 600;
+    position: relative;
+}
+
+/* This code is only for active*/
+header .navbar ul li a::before{  /* this before is for the the line under the navbar*/
+    content: '';
+    height: 3px;     
+    background-color: #ffffff;
+    width: 0%;
+    position: absolute;
+    right: 0px;       /* here right is 0 bcoz it in below hover if bottom line starts form left it shud end to right*/
+    
+    bottom: -1px;  /* here u can see at active region mark will be upside */
+    transition: all .5s ease;
+}
+
+header .navbar ul li a:hover::before{
+    width: 100%;
+    left: 0;   /* here when we click on nav the bottom line moves from lft to ryt*/
+}
+header .navbar ul li a.active::before{
+    width: 100%;
+    left: 0;   /* here when we click on nav the bottom line moves from lft to ryt*/
+}
+
+
+/* Home Section*/
+
+.home{
+    min-height: 85vh;
+    background-image: url("../images/edit1.jpg");  /* ***** use of .. is very important to add aa image in css file*/
+    background-size: cover;
+    background-position: center;
+    
+    
+}
+
+.home .full-screen{
+    /*background-color: red;*/
+    min-height: 100vh;
+    
+    
+}
+.home .home-content{
+    /*background-color: blue;*/
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;     /* this flex is like a grouping things*/
+    flex-wrap: wrap;    /* wraping the flex*/
+    align-items: center;   /* shifting the wrap*/
+}
+.home .home-content .block{
+    /*background-color: red;*/
+    flex:0 0 75%;       /* flex:top bottom right left*/
+    max-width:75%;
+    border-left: 10px solid #1d1a1a;
+    margin-left: 30px;
+    margin-top: 60px;
+}
+
+.home .home-content .block h6{
+    color: rgb(58, 14, 9);;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 30px;
+
+}
+.home .home-content .block h1{
+    color: rgb(58, 14, 9);
+    font-weight: 600;
+    font-size: 75px;
+    margin-left: 70px;
+
+}
+.home .home-content .block h3{
+    color: rgb(58, 14, 9);
+    font-weight: 500;
+    font-size: 30px;
+    margin-left: 70px;
+    padding-bottom: 20px;
+}
+
+.home .home-content .block .CV-btn a{
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 18px;
+    border:1px solid #ffffff;
+    padding:10px 22px;
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 70px;
+    text-transform: uppercase;
+    font-weight: 600;
+    
+    transition: all .5s ease;
+    background-color: transparent;
+}
+.home .home-content .block .CV-btn a:hover{
+    background-color: #ffffff;
+    color: #15161d;
+}
+
+
+/* About Me*/
+.about-me {
+    padding: 100px 0px;
+}
+.about-me .container {
+    margin: 0;
+    padding-left: 30px;
+}
+
+.about-me .section-title {
+    /*background-color: #d5d5d5;*/
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-left: 80px;
+    margin-bottom: 30px;
+    
+}
+.section-title h1 {
+    /*background-color: red;*/
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0 0 10px;   /* margin: top right bottom left*/
+    position: relative;
+    
+}
+
+.section-title h1::before {  /* *** HERE IT GIVES THE UNDER LINE FOR THE WHOLE H1*/
+    content: '';
+    left: 0;
+    right: 30%;
+    bottom: 0;
+    height: 3px;
+    background-color: #febd01;
+    position: absolute;
+}
+.text-uppercase {
+    text-transform: uppercase!important;
+}
+
+.about-me .section-title p.small{
+    /*background-color: blue;*/
+    /*display: inline-block;  if inline block they both come in same line but diff block */
+    display: block;    /* here the block comes in new line*/
+    font-size: 14px;
+    color: #838383;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+.about-me .about-content {
+    /*background-color: red;*/
+    background-color: #052c2c;
+    
+}
+.about-me .about-content .img {
+    flex:0 0 33.33%;
+    /*background-color: yellow;*/
+    max-width: 33.33%;
+}
+.about-me .about-content .img img {
+    width: 80%;
+    display: block; /* we took as a block and yrllow disappeared*/
+    height: 90%;
+    margin-left: 60px;
+    transform: rotateY(180deg);
+    border:10px solid white;
+    margin-top: 30px;
+}
+.about-me .about-content .text {
+    /*background-color: blue;*/
+    flex: 0 0 66.66%;
+    max-width: 66.66%;
+    padding-left: 40px;
+    color: whitesmoke;
+}
+
+.about-me .about-content .text h4{
+    font-size: 30px;
+    font-weight: 700;
+    margin: 60px 0 10px;
+}
+.about-me .about-content .text h6{
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 0 18px;
+}
+.about-me .about-content .text h6 span{
+    color: teal;
+}
+.about-me .about-content .text p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #CAFEFA;
+}
+.about-me .about-content .text .info{
+    /*background-color: rebeccapurple;*/
+    display: flex;
+    flex-wrap: wrap;  /* wrapinf make sit in line and in order manner*/
+    margin-top: 50px;
+    justify-content: space-between;
+}
+.about-me .about-content .text .info .list{
+    /*background-color: blue;*/
+    flex: 0 0 calc(50% - 15px);   /* here 50% is for deividing at 50:50 and 15% is for left gap*/
+    max-width: calc(50% - 15px);
+    margin-top: 20px;
+    display: flex; /* flex makes it in a row manner*/
+    flex-wrap: wrap;
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+    
+}
+.about-me .about-content .text .info .list label{
+    padding-right: 0px;
+    color: whitesmoke;
+    font-weight: 600;
+    font-size: 18px;
+}
+.about-me .about-content .text .info .list p{
+    margin-top: 3px;
+}
+.about-me .about-content .text  .social-links{
+    /*background-color: blue ;*/
+    margin-top: 70px;
+    margin-left: 180px;
+}
+.about-me .about-content .text  .social-links a{
+    background-color: black;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;  /* this gives the curved edge*/
+    display: inline-block;
+    margin-left: 50px;
+    border: 2px solid black;
+    -webkit-transition: all .5s ease;   /* 3 gives border for hover*/
+    transition: all .5s ease; /* 1 these numbers is for hover */
+}
+.about-me .about-content .text  .social-links a:hover{  /* 2 */
+    background-color: skyblue;
+}
+.about-me .about-content .text  .social-links a .fa{
+    color: skyblue;
+    font-size: 30px;
+    padding: 10px;
+    -webkit-transition: all .5s ease;   /*4*/
+    transition: all .5s ease;   /*4 */
+}
+.about-me .about-content .text  .social-links a:hover .fa{  /*5*/
+    color: black;
+
+} 
+/* About-me*/
+/* Skills */
+
+.skills {
+    padding: 70px 70px;
+}
+.skills .skills-content {
+    /*background-color: red;*/
+    flex: 0 0 60%;
+    width: 100%;
+}
+
+.align-items-center {
+    align-items: center;
+}
+.skills .img {
+    /*background-color: blue;*/
+    flex: 0 0 40%;
+    width: 100%;
+    display: block;
+}
+.skills .skills-content .section-title p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #838383;
+    margin: 15px 0 20px;
+}
+.skills .skills-content .skill-box{
+    /*background-color: grey;*/
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 30px;
+    padding-right: 300px;
+}
+.skills .skills-content .skill-box h6{
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    margin: 0 0 6px;
+}
+.skills .skills-content .skill-box .skill-bar{
+    height: 6px;
+    background-color: #eeeeee;
+    position: relative;
+    
+}
+.skills .skills-content .skill-box .skill-bar .skill-bar-in{
+    background-color: #febd01;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 85%;
+}
+.skills .skills-content .skill-box .skill-bar .skill-bar-in span{
+    color: #838383;
+    font-size: 16px;
+    font-weight: 500;
+    position: absolute;
+    right: 0;
+    top: -30px;
+}
+/* Skills */
+/*Projects*/
+.projects {
+    padding: 100px 0px;
+    
+}
+.projects .section-title {
+    padding-left: 600px;
+    padding-bottom: 50px;
+}
+.projects .section-title h1:before{  /* this makes the yello line small*/
+    left: 30%;
+}
+.projects .projects-content {
+    /*background-color: grey;*/
+    flex: 0 0 100%;
+    max-width: 0%;
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+}  
+.projects .projects-content .box{
+    /*background-color: blue;*/
+    flex: 0 0 calc(50%-70px); /* use of calc makes easy for the division */
+    max-width: calc(50%-70px);
+    background-color: #e4d5d5;
+    padding: 20px;
+    transition: all .5s ease;
+}
+.projects .projects-content .box:hover{
+background-color: #e956e9;
+}
+.projects .projects-content .box .img{
+    /*background-color:#CAFEFA;*/
+    justify-content: space-between;
+    
+    
+}
+.projects .projects-content .box .img img{
+    padding: 0 30px;
+    display: block;
+    
+}
+.projects .projects-content .box .info span{
+    font-size: 16px;
+    color: #924451;
+    font-weight: 500;
+    padding-left: 70px;
+}
+.projects .projects-content .box h3{
+    font-size: 25px;
+    text-align: center;
+}
+.projects .projects-content .box p{
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 10px;
+}
+
+/*Projects*/
+
+/* Contact us*/
+
+.contact-us {
+    padding: 100px 100px;
+    background-color: #ecf0f7;
+}
+
+.contact-us .text-center{     /* ***** here you took the content in center*/
+    justify-content: center;
+    padding-bottom: 60px;
+}
+
+.contact-us .section-title h1:before {
+    left: 30%;
+}
+.contact-us .contact-form {
+    background-color: #ffffff;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 10px 40px;
+    border: 1px solid #eeeeee;
+    border-radius: 10px;
+    
+
+}
+.contact-us .contact-form .text {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-bottom: 20px;
+}
+.contact-us .contact-form .text h2{
+    /*background-color: grey;*/
+    font-size: 26px;
+    font-weight: 600;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+.contact-us .contact-form .text p {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 25px;
+    color: #838383;
+    margin: 0px;
+    
+}
+.contact-us .contact-form .space-between {
+    justify-content: space-between;  /* ********* here where we took space between */
+}
+.contact-us .contact-form .col-6 {
+    /*background-color: black;*/
+    flex: 0 0 calc(50% - 15px); /*  *** flex(grow shrink baseline here 0 0 50%-20px means were it takes 50% place and 20px away )*/
+    max-width: calc(50% - 15px);
+    
+}
+.contact-us .contact-form .col-12 {
+    /*background-color: red;*/
+    flex: 0 0 100%;
+    max-width: 100%;
+    /*display: flex;       here u can by this nly the content inside the flex will be displayed*/
+}
+.contact-us .contact-form .form-control {
+    height: 45px;
+    width: 100%;
+    margin-bottom: 40px;
+    border: 1.5px solid #ced4da;
+    padding: 6px 12px;
+    font-size: 15px;
+    font-weight: 550;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-us .contact-form textarea.form-control {    /* ***** textarea making big seperately*/
+    height: 140px;
+}
+.contact-us .contact-form .form-control::placeholder{      /* ***** giving color seperately*/
+    color: #838383;
+}
+.contact-us .contact-form .button {
+    /*background-color: green;*/
+    padding: 0px;
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: end;
+}
+.contact-us .contact-form .button button{
+    border-radius: 4px;
+    color: #ffffff;
+    /*border: 1px solid #ffffff;*/
+    padding: 12px 25px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all .5s ease;
+    background-color: #febd01;
+    box-shadow: 0px 10px 15px #b1b1ce;
+}
+.contact-us .contact-form .button button:hover {
+    background-color: black;
+    color: #ffffff;
+}
+/* Contact us*/
+/* Footer*/
+
+footer {
+    background-color: #060625;
+    padding: 70px 10px;
+}
+footer .logo {
+    /*background-color: grey;*/
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+    color: white;
+}
+footer .social {
+    flex: 0 0 100%;
+    max-width: 100%;
+    /*background-color: yellow;*/
+    text-align: center;
+    padding-top: 20px;
+}
+footer .social a{
+    display: inline-block;
+    margin: 0 20px;
+    text-decoration: none;
+    font-size: 30px;
+    transition: all .5s ease;
+
+}
+footer .social a:hover {
+    color: thistle;
+}
+.copyright {
+    background-color: #060625;
+    border-top: 1px solid #1d1d27;
+
+}
+.copyright p{
+    color: #838383;
+    margin: o;
+    text-align: center;
+    padding: 15px;
+}
+/* Footer*/   
+
+.ham-burger .fa{
+    font-size: 30px;
+    color: black;
+    /*display: inline-block;*/
+    height: 27px;
+    width: 35px;
+    background-color: white;
+    border-radius: 3px;
+    line-height: 27px;
+    text-align: center;
+    cursor: pointer;
+    display: none;
+    border: 1px solid #eeeeee;
+}
+
+@media(max-width: 991px) {
+    
+    .home .home-content .block h1{
+        font-size: 50px;
+    }
+  
+    .home {
+        background-position-x: right;
+        padding-right: 0px;
+    }
+    
+}
+@media(max-width: 853px) {
+    .home .home-content .block h1{
+        font-size: 30px;
+    }
+    
+    header {
+        padding: 15px;
+        position: fixed;
+        background-color: white;
+        border: none;
+        border-bottom: 1px solid #eeeeee;
+        margin-right: 196px;
+        
+    }
+    
+    .ham-burger .fa{
+        display: inline-block;
+        
+    }
+    .navbar{
+        position: absolute;
+        background-color: white;
+        width: 100%;
+        left: 0px;
+        top: 70px;
+        padding: 15px;
+        border-top: 1px solid #eeeeee;
+        display: none;
+        border-bottom: ipx solid #eeeeee;
+    }
+   
+    header .navbar ul li{
+        display: block;
+        margin-left: 0;
+    }
+    header .navbar ul li a{
+        line-height: 55px;
+        color: black;
+    }
+    header .navbar ul li a::before{
+        background-color: #febd01;
+    }
+
+}
