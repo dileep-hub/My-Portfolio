@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Template</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <!--Start Header -- 1-->
+    <header>
+        <div class="container">
+          <div class="row">
+            <div class="brand-name">
+                <a href="" class="logo">Dhee estroyer</a>
+            </div>
+            <div class="ham-burger">
+                <i class="fa fa-bars"></i>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li><a href="" class="active">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/project">Projects</a></li>
+                    
+                    <li><a href="contact/">Contact</a></li>
+                </ul>
+            </div>
+          </div>
+        </div>
+    </header>
+    <!-- End Header -- 1 -->
+
+    <!-- Start Home - 2-->
+    <section class="home">
+        <div class="container">
+            <div class="row full-screen">
+                <div class="home-content">
+                    <div class="block">
+                        <h6>Hello , My name is</h6>
+                        <h1>Dileep Kumar</h1>
+                        <h3>Web Developer</h3>  
+                        <h3>Python Programmer</h3>
+                        <div class="CV-btn">
+                            <a href="https://github.com/dileep-hub/My-Portfolio" target="_blank">Download PRO</a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Home-->
+    
+    <!--Start About - 3-->
+    <section class="about-me">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h1>About Me</h1>
+                    <p class="small text-uppercase">Information About Me</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="about-content">
+                  <div class="row">
+                    <div class="img">
+                        <img src="{% static 'images/IMG_1433.JPG' %}" alt="about-me">
+                    </div>
+                    <div class="text">
+                        <h4>I'M Dileep Kumar</h4>
+                        <h6>A Lead <span>DEV $ PRO</span> designer based on <span>India</span></h6>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum amet ratione ducimus, in, error quis alias fuga laboriosam praesentium natus cupiditate magnam iure voluptates ipsa consequatur. Modi quis quod quaerat!</p>
+                        <div class="info">
+                            <div class="list">
+                                <label>Birthday:</label>
+                                <p>14th Feb 2002</p>
+                            </div>
+                            <div class="list">
+                                <label>Profession:</label>
+                                <p>Student</p>
+                            </div>
+                            <div class="list">
+                                <label>Email:</label>
+                                <p>dileepkumar1422002@gmail.com</p>
+                            </div>
+                            
+                            <div class="list">
+                                <label>Phone:</label>
+                                <p>9110619797</p>
+                            </div>
+                            <div class="list">
+                                <label>Residence:</label>
+                                <p>India</p>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://github.com/dileep-hub" target="_blank"><i class="fa fa-github"></i></a>
+                            <a href="https://twitter.com/DileepKumarSR6" target="_blank"><i class="fa fa-twitter" ></i></a>
+                            <a href="https://www.instagram.com/__dileep_14/" target="_blank"><i class="fa fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/dileep-kumar-a16b691a9/" target="_blank"><i class="fa fa-linkedin" ></i></a>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <!-- End About -->
+
+    <!-- Start Skills - 4-->
+    <section class="skills">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="skills-content">
+                    <div class="row">
+                        <div class="section-title">
+                            <h1>PROFESSIONAL SKILLS</h1>
+                            <p>At present i'm focusing on learning new things, and in exploring things</p>
+                        </div>
+                    </div>
+                <div class="row">
+                    <div class="skill-box">
+                        <h6>HTML5</h6>
+                        <div class="skill-bar">
+                            <div class="skill-bar-in" style="width: 85%;">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-box">
+                        <h6>CSS3</h6>
+                        <div class="skill-bar">
+                            <div class="skill-bar-in" style="width: 74%;">
+                                <span>74%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-box">
+                        <h6>DJANGO</h6>
+                        <div class="skill-bar">
+                            <div class="skill-bar-in" style="width: 90%;">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-box">
+                        <h6>ML</h6>
+                        <div class="skill-bar">
+                            <div class="skill-bar-in" style="width: 15%;">
+                                <span>15%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-box">
+                        <h6>PYTHON PROGRAMMING</h6>
+                        <div class="skill-bar">
+                            <div class="skill-bar-in" style="width: 65%;">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="img">
+                    <img src="https://www.flaticon.com/premium-icon/icons/svg/3104/3104483.svg" height="450"  alt="skills" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Skills - 4-->
+
+    <!--Start Project-->
+    <section class="projects">
+        <div class="container">
+            <div class="row">
+                <div class="section-title text-center">
+                    <h1>My Works</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="projects-content">
+                    <div class="box">
+                        <div class="img">
+                            <a href="https://github.com/dileep-hub/My-Portfolio" target="_blank"><img src="/static/images/aproj1.jpg" height="300" width="600" alt="projects"></a>
+                        </div>
+                        <div class="info">
+                            <span>17 June 2020</span>
+                        </div>
+                        <h3>My Portfolio</h3>
+                        <p>Make your own Portfolio </p>
+                        <img src="data:image/png;base64,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" width="50px
+                        " alt="">
+                    </div>
+                    <div class="box">
+                        <div class="img">
+                            <a href="https://github.com/dileep-hub/Tic-Tac-Toe-Project" target="_blank"><img src="/static/images/tic1.jpeg" height="300" width="600" alt="projects"></a>
+                        </div>
+                        <div class="info">
+                            <span>3 Mar 2020</span>
+                        </div>
+                        <h3>Tic Tac Toe</h3>
+                        <p>My First Game made with Python</p>
+                        <img src="https://image.flaticon.com/icons/png/512/3098/3098090.png" width="50" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Project-->
+    <!--Start Contact-->
+
+    <section class="contact-us">
+        <div class="container">
+            <div class="row text-center">
+              
+                <div class="section-title ">
+                    <h1>Get In Touch</h1>
+                </div>
+              
+            </div>
+            <div class="row">
+                <div class="contact-form">
+                    <div class="row">
+                        <div class="text">
+                            <h2>Drop a line</h2>
+                            <p>I'm here to answer any Question you have</p>
+                        </div>
+                    </div>
+                    <form action="{% url 'contact' %}" method="POST"> 
+                        {% csrf_token %}
+                        <div class="row space-between">
+                            <div class="col-6">
+                                <input type="text" class="form-control" name="name" placeholder="Name">
+                            </div>
+                            <div class="col-6">
+                                <input type="text" class="form-control" name="email" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <textarea class="form-control" name="comment" placeholder="Your Comment"></textarea>
+                            </div>
+                        </div>
+                    <div class="row">
+                        <div class="button" >
+                            <button  type="submit" >Get IN Touch</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--End Contact-->
+
+    <!-- Start Footer-->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="logo">
+                    Dileep
+                </div>
+            <div class="social">
+                <a href="https://github.com/dileep-hub" target="_blank"><i class="fa fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/dileep-kumar-a16b691a9/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                <a href="https://twitter.com/DileepKumarSR6" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.instagram.com/__dileep_14/" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100014534169461" target="_blank"><i class="fa fa-facebook"></i></a>
+            </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer-->
+    <!-- Start copyright-->
+    <section class="copyright">
+        <div class="container">
+            <p>&copy; 2020 copyright | All right reserved</p>
+        </div>
+    </section>
+
+    <!-- End copyright-->
+
+    
+</body>
+</html>
